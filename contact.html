@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang='en'>
+<!--  -->
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Venky - Contact</title>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap' rel='stylesheet'>
+  <script src='https://cdn.tailwindcss.com'></script>
+</head>
+<body style="font-family: 'Poppins', sans-serif;" class='bg-yellow-50 text-yellow-900 font-sans'>
+  <header class='w-full bg-yellow-500 text-yellow-900'>
+    <nav class='flex items-center justify-between px-4 py-4'>
+      <a href='./index.html' class='text-2xl font-bold' style='font-family:Poppins, sans-serif;'>Venky</a>
+      <ul class='flex space-x-6 font-semibold'>
+        <li><a href='./index.html' class='hover:text-yellow-800'>Home</a></li>
+        <li><a href='./about.html' class='hover:text-yellow-800'>About</a></li>
+        <li><a href='./contact.html' class='hover:text-yellow-800'>Contact</a></li>
+        <li><a href='./cart.html' class='hover:text-yellow-800'>Cart</a></li>
+        <li><a href='./checkout.html' class='hover:text-yellow-800'>Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class='w-full'>
+    <section class='w-full bg-yellow-100'>
+      <div class='px-4 py-16 text-center'>
+        <h1 class='text-4xl font-extrabold' style='font-family:Poppins, sans-serif;'>Contact Venky</h1>
+        <p class='mt-2'>Have questions? Reach out and we’ll respond promptly.</p>
+      </div>
+    </section>
+
+    <section class='w-full py-12 px-4'>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+        <form class='bg-white rounded-lg shadow p-6' onsubmit='event.preventDefault(); alert("Thanks! Your message has been sent.");'>
+          <div class='mb-4'>
+            <label class='block text-sm font-semibold mb-1'>Your Name</label>
+            <input type='text' required class='w-full border border-gray-300 rounded p-2'>
+          </div>
+          <div class='mb-4'>
+            <label class='block text-sm font-semibold mb-1'>Email</label>
+            <input type='email' required class='w-full border border-gray-300 rounded p-2'>
+          </div>
+          <div class='mb-4'>
+            <label class='block text-sm font-semibold mb-1'>Message</label>
+            <textarea required class='w-full border border-gray-300 rounded p-2' rows='4'></textarea>
+          </div>
+          <button type='submit' class='bg-yellow-700 text-white px-4 py-2 rounded'>Send Message</button>
+        </form>
+        <div class='bg-white rounded-lg shadow p-6 flex flex-col justify-center'>
+          <h2 class='text-xl font-bold mb-2'>Get in Touch</h2>
+          <p class='text-sm mb-2'>Phone: +91 8341457762</p>
+          <p class='text-sm mb-2'>Email: support@venky.dog</p>
+          <img src='https://pixabay.com/get/g01c267c61628c08868e1af51b08bffa48dc2cb15a61914ffb628b40c785caa9bd82e18a2f76b3212cf722b60b4e7bb352be95800c85c1f7b05df67385b3d93a5_640.jpg' alt='Dog contact' class='mt-4 w-full h-40 object-cover rounded'>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href='https://wa.me/918341457762' class='fixed bottom-6 right-6 z-50 bg-green-500 text-white rounded-full p-4 shadow-lg hover:bg-green-600' aria-label='Chat on WhatsApp'>
+    <svg xmlns='http://www.w3.org/2000/svg' class='h-6 w-6' viewBox='0 0 24 24' fill='currentColor'>
+      <path d='M20.5 3a2.5 2.5 0 0 1 2.5 2.5v13A2.5 2.5 0 0 1 20.5 21H3.5A2.5 2.5 0 0 1 1 18.5v-13A2.5 2.5 0 0 1 3.5 3h17zM7 8a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0V9h-1zM10 8a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1zm3 0a1 1 0 0 0-1 1v6a1 1 0 1 0 2 0V9a1 1 0 0 0-1-1z' />
+    </svg>
+  </a>
+</body>
+</html>
